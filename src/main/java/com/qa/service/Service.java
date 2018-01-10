@@ -13,6 +13,14 @@ public class Service {
 		movieMap = new HashMap<Integer, Movie>();
 	}
 
+	public Map<Integer, Movie> getMovieMap() {
+		return movieMap;
+	}
+
+	public void setMovieMap(Map<Integer, Movie> movieMap) {
+		this.movieMap = movieMap;
+	}
+
 	public void addMovie(Movie aMovie) {
 		count++;
 		movieMap.put(count, aMovie);
@@ -21,4 +29,6 @@ public class Service {
 	public void deleteMovie(int movieToDelete) {
 		movieMap.remove(movieToDelete);
 	}
+	
+	
 }
